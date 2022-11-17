@@ -189,9 +189,9 @@ img {
     margin-bottom: 40px;
 }
 
-.about_content .progress_body .skill_list {}
+/* .about_content .progress_body .skill_list {} */
 
-.about_content .progress_body .skill_list .skill_name {}
+/* .about_content .progress_body .skill_list .skill_name {} */
 
 .about_content .progress_body .skill_list .skill_name h4 {
     font-family: var(--monserrat);
@@ -229,7 +229,7 @@ img {
     align-items: center;
 }
 
-.counter_body .icon_part {}
+/* .counter_body .icon_part {} */
 
 .counter_body .icon_part i {
     font-size: 35px;
@@ -261,9 +261,9 @@ img {
     overflow: hidden;
 }
 
-.gallery_item .img {}
+/* .gallery_item .img {} */
 
-.gallery_item .img img {}
+/* .gallery_item .img img {} */
 
 .gallery_item:hover .overlay {
     left: 0;
@@ -322,7 +322,7 @@ img {
     font-size: 30px;
 }
 
-.video_body a i {}
+/* .video_body a i {} */
 
 /* what i do css */
 .what_i_do {
@@ -361,7 +361,7 @@ footer {
     padding: 100px 0px;
 }
 
-.footer_item {}
+/* .footer_item {} */
 
 .footer_item h2 {
     color: var(--white);
