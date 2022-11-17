@@ -1,0 +1,390 @@
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+
+body,
+html {
+    overflow-x: hidden;
+
+}
+
+:root {
+    --white: white;
+    --off_white: #f8f9f9;
+    --black: #191919;
+    --pg_color: #787878;
+    --brand: #10c9c3;
+    --nunito: 'Nunito Sans', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --border: 1px solid red;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0;
+    margin: 0;
+    transition-duration: .3s;
+    font-family: var(--montserrat);
+    color: var(--black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--nunito);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+i,
+span,
+img {
+    display: inline-block;
+}
+
+/* header part start */
+#header {
+    background: url("https://www.uasvoice.com/images/values.jpg") rgba(0, 0, 0, .2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+#header header {
+    backdrop-filter: blur(5px);
+}
+
+#header header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+/* #header header nav .logo {
+    border: var(--border);
+} */
+
+/* #header header nav .logo img {} */
+
+/* #header header nav .nav_links {
+    border: var(--border);
+} */
+
+#header header nav .nav_links ul {
+    display: flex;
+    gap: 30px;
+}
+
+/* #header header nav .nav_links ul li {} */
+
+#header header nav .nav_links ul li a {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+#header header nav .nav_links ul li a:hover {
+    color: var(--brand);
+}
+
+#header .banner_part {
+    backdrop-filter: blur(5px);
+}
+
+#header .banner_part .content {
+    padding: 200px 0px;
+}
+
+#header .banner_part .content .heading {
+    font-size: 38px;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+
+#header .banner_part .content .paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+#header .banner_part .content .link {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 500;
+    background-color: var(--brand);
+    padding: 20px 45px;
+    text-transform: uppercase;
+}
+
+/* header part end */
+
+.section_heading {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.section_heading h2 {
+    margin-bottom: 35px;
+    font-family: var(--monserrat);
+}
+
+.section_heading p {
+    width: 630px;
+    margin: auto;
+}
+
+.about_content {
+    padding-bottom: 100px;
+}
+
+.about_content .progress_body {
+    /* border: 1px solid red; */
+    height: 100%;
+    display: grid;
+    align-content: center;
+    /* justify-content: center;  */
+}
+
+.about_content .progress_body h3 {
+    font-size: 30px;
+    font-family: var(--monserrat);
+    margin-bottom: 40px;
+}
+
+.about_content .progress_body .skill_list {}
+
+.about_content .progress_body .skill_list .skill_name {}
+
+.about_content .progress_body .skill_list .skill_name h4 {
+    font-family: var(--monserrat);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.about_content .progress_body .skill_list .skill_name h4 span {
+    margin-left: 30px;
+}
+
+.about_content .progress_body .skill_list .skill_bar {
+    background: #d8d8d8;
+    margin-bottom: 40px;
+}
+
+.about_content .progress_body .skill_list:last-child .skill_bar {
+    margin-bottom: 0px;
+}
+
+.about_content .progress_body .skill_list .skill_bar .skill_length {
+    background-color: var(--brand);
+    padding: 5px 0px;
+}
+
+/* counter part css start */
+.counter_part {
+    background-color: var(--brand);
+    padding: 100px 0px;
+}
+
+.counter_body {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.counter_body .icon_part {}
+
+.counter_body .icon_part i {
+    font-size: 35px;
+    color: var(--white);
+}
+
+.counter_body .details {
+    flex: 1;
+}
+
+.counter_body .details h3 {
+    font-size: 18px;
+    font-family: var(--monserrat);
+    font-weight: 500;
+    color: var(--white);
+}
+
+.counter_body .details p {
+    font-size: 12px;
+    font-family: var(--monserrat);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+/* gallery css */
+.gallery_item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery_item .img {}
+
+.gallery_item .img img {}
+
+.gallery_item:hover .overlay {
+    left: 0;
+}
+
+.gallery_item .overlay {
+    background-color: rgba(0, 0, 0, .6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition-duration: .3s;
+}
+
+.gallery_item .overlay a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: 30px;
+}
+
+/* work porcess css */
+.video_body {
+    position: relative;
+}
+
+.video_body iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.video_body .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.video_body .overlay a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    background-color: var(--brand);
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.video_body a i {}
+
+/* what i do css */
+.what_i_do {
+    background-color: var(--off_white);
+}
+
+.what_i_do_list {
+    padding: 70px 0px;
+}
+
+.what_i_do_list .what_i_do_item {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.what_i_do_list .what_i_do_item i {
+    font-size: 40px;
+}
+
+.what_i_do_list .what_i_do_item h3 {
+    font-family: var(--monserrat);
+    margin: 25px 0px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.what_i_do_list .what_i_do_item p {
+    font-family: var(--monserrat);
+    font-size: 16px;
+}
+
+/* footer css */
+
+footer {
+    background-color: var(--black);
+    padding: 100px 0px;
+}
+
+.footer_item {}
+
+.footer_item h2 {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.footer_item p {
+    color: var(--white);
+    font-size: 15px;
+    padding-top: 30px;
+}
+
+.footer_item a {
+    color: var(--white);
+    font-size: 15px;
+}
+
+.box {
+    position: fixed;
+    background-color: red;
+    padding: 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
